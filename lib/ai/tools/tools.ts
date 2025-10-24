@@ -13,6 +13,7 @@ import { generateImage } from '@/lib/ai/tools/generate-image';
 import type { ModelId } from '@/lib/models';
 import type { StreamWriter } from '../types';
 import { deepResearch } from './deep-research/deep-research';
+import { findingsCollectorTool } from './findings-collector';
 import { env } from '@/lib/env';
 
 export function getTools({
@@ -84,5 +85,6 @@ export function getTools({
           }),
         }
       : {}),
+    findingsCollector: findingsCollectorTool,
   };
 }

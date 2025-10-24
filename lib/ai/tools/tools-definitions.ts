@@ -61,6 +61,11 @@ export const toolsDefinitions: Record<ToolName, ToolDefinition> = {
     description: 'Research a topic',
     cost: 50,
   },
+  findingsCollector: {
+    name: 'findingsCollector',
+    description: 'Collect evidence and findings from chat sessions for red teaming research',
+    cost: 2,
+  },
 };
 
 export const allTools = toolNameSchema.options;
